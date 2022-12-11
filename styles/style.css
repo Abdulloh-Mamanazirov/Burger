@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  padding: 30px 40px;
+  background-image: linear-gradient(150deg, #0073ff, #0032a8);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul{
+  font-weight: 600;
+  font-size: 19px;
+}
+
+button{
+  border: 1px solid #0032a8;
+  border-radius: 7px;
+  padding: 7px 15px;
+}
+#cheese{
+  margin-bottom: 5px;
+}
+#clear{
+  background-color: #ff0000c5;
+  color: #fff;
+}
+
+.bg-burger {
+  position: absolute;
+}
+
+.bg-1 {
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  left: -70px;
+  max-width: 450px;
+}
+
+.bg-2 {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  right: 70px;
+  max-width: 300px;
+}
+
+.bg-3 {
+  left: 40%;
+  bottom: 0;
+  max-width: 500px;
+}
+
+.container {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.477);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+    gap: 20px;
+}
+
+/* #burgerContainer{
+  padding: 20px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+} */
+
+
+#cheese{
+  background-color: #ff0;
+  font-size: 17px;
+}
+#meat{
+  background-color: #ff0000c0;
+  font-size: 17px;
+  color: #fff;
+}
+#onion{
+  background-color: #f6caca;
+  font-size: 17px;
+}
+#salad{
+  background-color: lime;
+  font-size: 17px;
+}
+#tomato{
+  background-color: tomato;
+  font-size: 17px;
+  color: #fff;
+}
+#pickle{
+  background-color: limegreen;
+  font-size: 17px;
+  color: #fff;
+}
+#order, #clear{
+  padding: 8px 25px;
+  font-size: 20px;
+}
+
+#burger {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#topBread{
+  position: relative;
+  z-index: -999;
+}
+#bottomBread{
+  position: relative;
+  z-index: 999;
+}
+#burger img{
+  margin:-30px 0;
+  z-index: -5;
+}
+.dnone{
+  display: none;
+}
+
+h1{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+@media (max-width:800px) {
+ .container{
+  padding-top: 130px;
+  overflow-y: auto;
+  flex-direction: column;
+ } 
+ ul{
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+ }
+ .btns{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+ }
+ h1{
+  text-align: center;
+ }
+ .bg-1, .bg-2, .bg-3{
+  display: none;
+ }
+}

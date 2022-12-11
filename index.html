@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Burger</title>
+  </head>
+  <body>
+    <img
+      class="bg-burger bg-1"
+      src="./burger-layers/bg-images/burger-1.png"
+      alt=""
+    />
+    <img
+      class="bg-burger bg-2"
+      src="./burger-layers/bg-images/burger-2.png"
+      alt=""
+    />
+    <img
+      class="bg-burger bg-3"
+      src="./burger-layers/bg-images/burger-3.png"
+      alt=""
+    />
+
+    <div class="container">
+      <div id="burgerContainer">
+        <img
+        id="bottomBread"
+        src="./burger-layers/top-bread.svg"
+        alt="bread"
+        />
+        <div id="burger"></div>
+        <img id="topBread" src="./burger-layers/bottom-bread.svg" alt="bread" />
+      </div>
+      <div class="wrapper">
+      <div class="prices">
+          <ul>
+            <li>Bread - $2</li>
+            <li>Cheese - $2</li>
+            <li>Meat - $5</li>
+            <li>Onion - $1</li>
+            <li>Salad - $1</li>
+            <li>Tomato - $2</li>
+            <li>Pickle - $3</li>
+          </ul>
+        </div>
+        <div class="btns">
+          <button id="cheese">Cheese</button>
+          <button id="meat">Meat</button>
+          <button id="onion">Onion</button>
+          <button id="salad">Salad</button><br>
+          <button id="tomato">Tomato</button>
+          <button id="pickle">Pickle</button>
+          <button id="order">Order</button>
+          <button id="clear">Clear All</button>
+        </div>
+        <div class="total">
+          <h1>Total : $<span id="price">2</span></h1>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
